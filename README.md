@@ -91,6 +91,12 @@ Use the next command to build the bundle in development mode:
 npm run start
 ```
 
+Install PHP packages using Composer:
+
+```
+composer install
+```
+
 # 🥳 
 
 Have a great time with developing!
