@@ -31,8 +31,8 @@ ACF Pro plugin is required.
 	* 🚀 Supports multi block compiling using one command to start.
 
 * Examples
-	* Tesmonial
-	* Tesmonial Item - example using Inner Blocks.
+	* Testmonial
+	* Testmonial Item - example using Inner Blocks.
 
 * 🔬  Coding standarts
 	* Phpcs and wp-coding-standards is available
