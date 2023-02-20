@@ -1,5 +1,3 @@
-
-
 # WordPress Theme Boilerplate using ACF Pro Blocks and Blade as template engine
 
 ## Motivation
