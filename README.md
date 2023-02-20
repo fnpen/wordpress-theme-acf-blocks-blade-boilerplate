@@ -51,7 +51,7 @@ Clone the repo using next command to your `wp-content/themes/` directory:
 git clone https://github.com/fnpen/wordpress-theme-acf-blocks-blade-boilerplate.git
 ```
 
-Enable plugin 'WordPress Theme Boilerplate using ACF Pro Blocks and Blade'.
+Enable theme 'WordPress Theme Boilerplate using ACF Pro Blocks and Blade'.
 
 ## Clean Blocks Structure
 
