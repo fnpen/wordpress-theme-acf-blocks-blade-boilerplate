@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "name": "boilerplate/testmonials",
+  "title": "Testmonials",
+  "description": "",
+  "category": "formatting",
+  "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-message-circle-2\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path><path d=\"M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1\"></path></svg>",
+  "keywords": ["testmonials"],
+  "supports": {
+    "border": true,
+    "align": true,
+    "anchor": true,
+    "color": {
+      "text": false,
+      "background": true,
+      "gradients": true,
+      "enableContrastChecker": false
+    }
+  },
+  "example": {
+    "attributes": {},
+    "innerBlocks": [
+      {
+        "name": "boilerplate/testmonial-item",
+        "attributes": {
+          "data": {
+            "user_name": "Joann Osinski",
+            "message": "The project was well-planned and executed, with a clear vision and roadmap for success."
+          }
+        }
+      },
+      {
+        "name": "boilerplate/testmonial-item",
+        "attributes": {
+          "data": {
+            "user_name": "Mrs. Marcella Huels",
+            "message": "The team behind the project was highly skilled and dedicated, and demonstrated a strong commitment to quality."
+          }
+        }
+      }
+    ]
+  },
+  "style": "file:./build/block.css",
+  "script": "file:./build/block.js",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.blade.php"
+  }
+}

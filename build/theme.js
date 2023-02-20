@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Common theme js file.")})();

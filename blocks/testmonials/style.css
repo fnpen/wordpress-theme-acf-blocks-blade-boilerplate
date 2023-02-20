@@ -1,0 +1,14 @@
+.block-testmonials {
+	& .acf-innerblocks-container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 1rem;
+
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		& .wp-block-boilerplate-testmonial-item {
+		}
+	}
+}

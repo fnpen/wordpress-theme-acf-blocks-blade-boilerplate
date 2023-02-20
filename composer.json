@@ -1,0 +1,32 @@
+{
+  "name": "fnpen/wordpress-theme-acf-blocks-blade-boilerplate",
+  "description": "",
+  "type": "wordpress-theme",
+  "license": "GPL-3.0-or-later",
+  "version": "0.0.1",
+  "require": {
+    "php": ">=7.1",
+    "eftec/bladeone": "4.8",
+    "scrivo/highlight.php": "v9.18.1.10"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.7.1",
+    "wp-coding-standards/wpcs": "2.3.*",
+    "phpcompatibility/php-compatibility": "9.3.*",
+    "dealerdirect/phpcodesniffer-composer-installer": "1.0.0"
+  },
+  "scripts": {
+    "lint": "phpcs --standard=.phpcs.xml .",
+    "beautify": "phpcbf --standard=.phpcs.xml ."
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Boilerplate\\": "classes"
+    }
+  }
+}
