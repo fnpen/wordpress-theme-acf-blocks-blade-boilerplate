@@ -1,5 +1,7 @@
 # WordPress Theme Boilerplate using ACF Pro Blocks and Blade as template engine
 
+![image](https://user-images.githubusercontent.com/31767378/220068812-ee7dd479-463a-4747-a545-af56d4a149fb.png)
+
 ## Motivation
 
 Creating the boilerplate of theme for fast and rapid WordPress Theme using Gutenberg blocks, together with ACF Pro and blade.
@@ -20,6 +22,10 @@ ACF Pro plugin is required.
 * Uses FontSource to use fonts locally and embed them to theme
 
 * 🧑‍🎨  PostCSS with stage-0 features to use any CSS-next features
+
+* Better Local JSON - ACF Pro UI automatically reads and writes json to block's folder instead of `acf-json`
+
+* Clean structure - each block has his own separate folder, build and automatically bundled by WebPack
 
 * ⚡  Great developer experience
 	* 🚀 Supports multi block compiling using one command to start.
@@ -47,9 +53,23 @@ git clone https://github.com/fnpen/wordpress-theme-acf-blocks-blade-boilerplate.
 
 Enable plugin 'WordPress Theme Boilerplate using ACF Pro Blocks and Blade'.
 
+## Clean Blocks Structure
+
+![image](https://user-images.githubusercontent.com/31767378/220070171-ea8cd24f-3960-43f4-a07d-830247626ca4.png)
+
+## Automatic block.json detection
+
+![image](https://user-images.githubusercontent.com/31767378/220070370-6d8ce7f2-17f5-4697-a9e4-d51d3686eb64.png)
+
+
 ## More Examples
 
+![image](https://user-images.githubusercontent.com/31767378/220068588-89db3ee4-4a35-4731-be2e-580f59d4de77.png)
 
+
+Previews:
+
+![image](https://user-images.githubusercontent.com/31767378/220069946-d9a5a8fb-65d2-4c56-85c2-280e28f34c99.png)
 
 ## How to modify and build bundle? 😎 
 
