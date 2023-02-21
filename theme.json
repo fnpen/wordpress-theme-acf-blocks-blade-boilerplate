@@ -96,80 +96,16 @@
       "fluid": true,
       "fontFamilies": [
         {
-          "fontFace": [
-            {
-              "fontFamily": "DM Sans",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "400"
-            },
-            {
-              "fontFamily": "DM Sans",
-              "fontStretch": "normal",
-              "fontStyle": "italic",
-              "fontWeight": "400"
-            },
-            {
-              "fontFamily": "DM Sans",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "700"
-            },
-            {
-              "fontFamily": "DM Sans",
-              "fontStretch": "normal",
-              "fontStyle": "italic",
-              "fontWeight": "700"
-            }
-          ],
           "fontFamily": "\"DM Sans\", sans-serif",
           "name": "DM Sans",
           "slug": "dm-sans"
         },
         {
-          "fontFace": [
-            {
-              "fontDisplay": "block",
-              "fontFamily": "IBM Plex Mono",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "300"
-            },
-            {
-              "fontDisplay": "block",
-              "fontFamily": "IBM Plex Mono",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "400"
-            },
-            {
-              "fontDisplay": "block",
-              "fontFamily": "IBM Plex Mono",
-              "fontStretch": "normal",
-              "fontStyle": "italic",
-              "fontWeight": "400"
-            },
-            {
-              "fontDisplay": "block",
-              "fontFamily": "IBM Plex Mono",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "700"
-            }
-          ],
           "fontFamily": "'IBM Plex Mono', monospace",
           "name": "IBM Plex Mono",
           "slug": "ibm-plex-mono"
         },
         {
-          "fontFace": [
-            {
-              "fontFamily": "Inter",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "200 900"
-            }
-          ],
           "fontFamily": "\"Inter\", sans-serif",
           "name": "Inter",
           "slug": "inter"
@@ -180,20 +116,6 @@
           "slug": "system-font"
         },
         {
-          "fontFace": [
-            {
-              "fontFamily": "Source Serif Pro",
-              "fontStretch": "normal",
-              "fontStyle": "normal",
-              "fontWeight": "200 900"
-            },
-            {
-              "fontFamily": "Source Serif Pro",
-              "fontStretch": "normal",
-              "fontStyle": "italic",
-              "fontWeight": "200 900"
-            }
-          ],
           "fontFamily": "\"Source Serif Pro\", serif",
           "name": "Source Serif Pro",
           "slug": "source-serif-pro"

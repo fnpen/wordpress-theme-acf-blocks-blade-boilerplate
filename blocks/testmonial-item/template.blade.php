@@ -2,7 +2,8 @@
 	<div class="post-info">
 
 		<div class="left-area">
-			<a href="#"><img src="https://i.pravatar.cc/150?img={{$index}}" class="img-cm" alt="Profile Image"></a>
+			<a href="#"><img src="https://i.pravatar.cc/150?img={{$attrs->index}}" class="img-cm"
+					alt="Profile Image"></a>
 
 		</div>
 

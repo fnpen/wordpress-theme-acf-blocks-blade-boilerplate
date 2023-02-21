@@ -7,11 +7,45 @@
 
 namespace Boilerplate\Core {
 	/**
+	 * Tiny helper with magic method to get attribute value.
+	 *
+	 * @package Boilerplate\Core
+	 */
+	class Attributes {
+		/**
+		 * Data with attributes.
+		 *
+		 * @var array
+		 */
+		private $data = [];
+
+		/**
+		 * Creates instance of class
+		 *
+		 * @param array $data Array with attributes.
+		 * @return void
+		 */
+		public function __construct( $data ) {
+			$this->data = $data;
+		}
+
+		/**
+		 * Returns value by name.
+		 *
+		 * @param mixed $name Field name.
+		 * @return mixed.|string
+		 */
+		public function __get( $name ) {
+			return isset( $this->data[ $name ] ) ? $this->data[ $name ] : '';
+		}
+	}
+
+	/**
 	 * Tiny ACF helper with magic method to get field value.
 	 *
 	 * @package Boilerplate\Core
 	 */
-	class Acf {
+	class Acf { // phpcs:ignore Generic.Files.OneObjectStructurePerFile.MultipleFound,Generic.Classes.OpeningBraceSameLine.ContentAfterBrace
 		/**
 		 * Returns value by field name.
 		 *
@@ -19,7 +53,7 @@ namespace Boilerplate\Core {
 		 * @return mixed.|string
 		 */
 		public function __get( $name ) {
-			return get_field( $name ) ?? '';
+			return get_field( $name ) ?? acf_get_field( $name )['default_value'];
 		}
 	}
 
@@ -75,9 +109,8 @@ namespace Boilerplate\Core {
 			}
 
 			$attributes['content'] = $content;
-			$attributes['all']     = $attributes;
 
-			return BladeRenderer::get_instance()->run( $this->template, $attributes );
+			return BladeRenderer::get_instance()->run( $this->template, array_merge( [], $attributes, [ 'attr' => new Attributes( $attributes ) ] ) );
 		}
 	}
 }

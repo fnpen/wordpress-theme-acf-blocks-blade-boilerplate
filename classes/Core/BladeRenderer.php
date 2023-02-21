@@ -218,7 +218,7 @@ namespace Boilerplate\Core {
 
 			wp_mkdir_p( $cache );
 
-			$blade             = new BladeWp( BOILERPLATE_PATH, $cache, ! WP_DEBUG ? BladeOne::MODE_FAST : BladeOne::MODE_DEBUG );
+			$blade             = new BladeWp( BOILERPLATE_PATH, $cache, ! WP_DEBUG ? BladeOne::MODE_AUTO : BladeOne::MODE_DEBUG );
 			$blade->pipeEnable = true; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 
 			$blade->directiveRT( 'wrapperAttributes', [ $this, 'echo_wrapper_attributes' ] );

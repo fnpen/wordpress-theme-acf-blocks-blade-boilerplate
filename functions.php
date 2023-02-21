@@ -79,9 +79,9 @@ add_filter(
 			$parsed_block['blockName']
 		);
 
-		if ( $block_type ) {
-			$parsed_block['attrs'] = $block_type->prepare_attributes_for_render( $parsed_block['attrs'] );
-		}
+		// if ( $block_type ) {
+		// 	$parsed_block['attrs'] = $block_type->prepare_attributes_for_render( $parsed_block['attrs'] );
+		// }
 
 		if ( ! empty( $parsed_block['innerBlocks'] ) ) {
 			foreach ( $parsed_block['innerBlocks'] as $index => &$inner_block ) {
